@@ -1,0 +1,1 @@
+(setf x 50 a 0 b 0)(loop while(set'l(read-char()*))do(dotimes'(read)(setf x(mod(+(if(eq #\R l)1 -1)x)100)y(if(> x 0)0 1)b(+ y b)))(incf a y))(print a)(print b)

@@ -27,6 +27,6 @@ If you wish to submit solutions, please use [the bot](https://discord.com/api/oa
 
 ## Leaderboard
 
-Day | K (ngn/k) | Python
---: | --- | ---
-1 | [37 - ovs00](./solutions/1/k_ngn) | [92 - ovs00](./solutions/1/python)
+Day | Common Lisp (SBCL) | K (ngn/k) | Python
+--: | --- | --- | ---
+1 | [159 - kg583](./solutions/1/sbcl) | [37 - ovs00](./solutions/1/k_ngn) | [92 - ovs00](./solutions/1/python)
