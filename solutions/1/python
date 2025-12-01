@@ -1,0 +1,4 @@
+a=b=0
+p=50
+for x in open(0):exec("p+=x>'M'or-1;p%=100;b+=p<1;"*int(x[1:]));a+=p<1
+print(a,b)
