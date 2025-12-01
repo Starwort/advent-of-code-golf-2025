@@ -241,7 +241,7 @@ class Runner(commands.Cog):
 
     async def execute(
         self, ctx: Context, code: str, language: str, input: str
-    ) -> list[str]:
+    ) -> tuple[str, bool]:
         stdout = ""
         stderr = ""
         async with websockets.connect(
@@ -295,9 +295,9 @@ class Runner(commands.Cog):
                                 )
                         break
             if stdout:
-                return stdout.split()
+                return stdout, False
             else:
-                return stderr.split()
+                return stderr, True
 
     @commands.command()
     async def submit(
@@ -429,33 +429,41 @@ class Runner(commands.Cog):
         return out_answers
 
     async def grade_solution(
-        self, ctx: Context, answers: list[str], real_answers: tuple[str, ...]
+        self, ctx: Context, answers: tuple[str, bool], real_answers: tuple[str, ...]
     ) -> bool:
-        answers = self.parse_answers(answers)
-        if len(answers) != len(real_answers):
-            await ctx.last_message.append_line(
-                "Your solution gave the wrong number of answers; found:"
-                f" {len(answers)} ({', '.join(answers)}), expected: {len(real_answers)}"
-            )
+        raw_answers, is_err = answers
+        parsed_answers = self.parse_answers(raw_answers.split())
+        if len(parsed_answers) != len(real_answers):
+            if is_err:
+                await ctx.last_message.append_line(
+                    "Your solution gave the wrong number of answers; found"
+                    f" {len(parsed_answers)} (expected: {len(real_answers)})\n"
+                    f"```\n{raw_answers}\n```"
+                )
+            else:
+                await ctx.last_message.append_line(
+                    "Your solution gave the wrong number of answers; found:"
+                    f" {len(parsed_answers)} ({', '.join(parsed_answers)}), expected: {len(real_answers)})"
+                )
             return False
-        if tuple(answers) == real_answers:
+        if tuple(parsed_answers) == real_answers:
             return True
-        elif answers[0] == real_answers[0]:
+        elif parsed_answers[0] == real_answers[0]:
             await ctx.last_message.append_line(
-                f"Solution gave wrong answer for part 2: {answers[1]}! Correct answer:"
+                f"Solution gave wrong answer for part 2: {parsed_answers[1]}! Correct answer:"
                 f" {real_answers[1]}"
             )
             return False
-        elif len(answers) == 1 or answers[1] == real_answers[1]:
+        elif len(parsed_answers) == 1 or parsed_answers[1] == real_answers[1]:
             await ctx.last_message.append_line(
-                f"Solution gave wrong answer for part 1: {answers[0]}! Correct answer:"
+                f"Solution gave wrong answer for part 1: {parsed_answers[0]}! Correct answer:"
                 f" {real_answers[0]}"
             )
             return False
         else:
             await ctx.last_message.append_line(
-                f"Solution gave wrong answers for both parts: {answers[0]},"
-                f" {answers[1]}! Correct answers: {real_answers[0]}, {real_answers[1]}"
+                f"Solution gave wrong answers for both parts: {parsed_answers[0]},"
+                f" {parsed_answers[1]}! Correct answers: {real_answers[0]}, {real_answers[1]}"
             )
             return False
 
