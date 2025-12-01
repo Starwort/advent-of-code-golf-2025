@@ -29,4 +29,4 @@ If you wish to submit solutions, please use [the bot](https://discord.com/api/oa
 
 Day | Common Lisp (SBCL) | K (ngn/k) | Python
 --: | --- | --- | ---
-1 | [159 - kg583](./solutions/1/sbcl) | [37 - ovs00](./solutions/1/k_ngn) | [92 - ovs00](./solutions/1/python)
+1 | [159 - kg583](./solutions/1/sbcl) | [37 - ovs00](./solutions/1/k_ngn) | [90 - .___uho](./solutions/1/python)
