@@ -1,1 +1,1 @@
-(and(#0=set-syntax-from-char #\- #\ )(#0##\, #\ )(set'b 0)(#9=format t"~a ~a"(loop while(set'l(read()*))sum(loop as n from l to(read)do(setf s(#9#*"~a"n)z(floor(length s)(search s(#9#*"~a~a"n n):start2 1))b(+(*(mod 1 z)n)b))if(evenp z)sum n))b))
+(set'b 0)(#9=format(if(#0=set-syntax-from-char #\- #\ )(#0##\, #\ ))"~a ~a"(loop while(set'l(read()*))sum(loop as n from l to(read)do(setf s(#9#*"~a"n)z(floor(length s)(search s(#9#*"~a~a"n n):start2 1))b(+(*(mod 1 z)n)b))if(evenp z)sum n))b)
