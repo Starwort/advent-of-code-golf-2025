@@ -1,0 +1,1 @@
+(and(#0=set-syntax-from-char #\- #\ )(#0##\, #\ )(set'b 0)(#9=format t"~a ~a"(loop while(set'l(read()*))sum(loop as n from l to(read)do(setf s(#9#*"~a"n)m(ash(length s)-1)u(#9#*"~a~a"n n)b(if(search s(#8=subseq u 1(1-(length u))))(+ b n)b))if(equal(#8#s m)(#8#s 0 m))sum n))b))
