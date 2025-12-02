@@ -1,3 +1,1 @@
-z 'L'='-';z 'R'=' ';z x=x
-p=print.length.filter((<1).(`mod`100)).scanl(+)50
-main=do i<-(map read.lines)<$>map z<$>getContents;p$i;p$i>>=replicate<$>abs<*>signum
+main=do i<-getContents;mapM(\f->print$sum[0^mod x 100|x<-scanl(+)50$do(c:r)<-lines i;f(read r)$length['Q'..c]-1])[(pure.).(*),replicate]
