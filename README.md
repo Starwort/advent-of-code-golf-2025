@@ -27,7 +27,7 @@ If you wish to submit solutions, please use [the bot](https://discord.com/api/oa
 
 ## Leaderboard
 
-Day | C++ (GCC) | Common Lisp (SBCL) | Haskell | K (ngn/k) | Python
---: | --- | --- | --- | --- | ---
-1 | [188 - astdefu](./solutions/1/cplusplus_gcc) | [159 - kg583](./solutions/1/sbcl) | [136 - ovs00](./solutions/1/haskell) | [37 - ovs00](./solutions/1/k_ngn) | [90 - .___uho](./solutions/1/python)
-2 | - | [242 - kg583](./solutions/2/sbcl) | - | [66 - ovs00](./solutions/2/k_ngn) | [135 - kg583](./solutions/2/python)
+Day | C++ (GCC) | Common Lisp (SBCL) | Haskell | K (ngn/k) | Python | Ruby
+--: | --- | --- | --- | --- | --- | ---
+1 | [188 - astdefu](./solutions/1/cplusplus_gcc) | [159 - kg583](./solutions/1/sbcl) | [136 - ovs00](./solutions/1/haskell) | [37 - ovs00](./solutions/1/k_ngn) | [90 - .___uho](./solutions/1/python) | -
+2 | - | [242 - kg583](./solutions/2/sbcl) | - | [66 - ovs00](./solutions/2/k_ngn) | [135 - kg583](./solutions/2/python) | [94 - the.unnamed](./solutions/2/ruby)
