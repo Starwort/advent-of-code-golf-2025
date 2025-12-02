@@ -1,0 +1,15 @@
+p1 = p2 = 0
+for entry in input().split(","):
+    start, end = entry.split("-")
+    for val in range(int(start), int(end) + 1): 
+        s = str(val)
+        l = len(s)
+        d = l // 2
+        while d: 
+            if l % d == 0 and s == s[:d] * (l // d): break
+            d -= 1
+        if l > 1:
+            p1 += (d == l / 2) and val
+            p2 += d and val
+
+print(p1, p2)
