@@ -1,6 +1,6 @@
 a=b=0
 l=eval(input().replace(*'-,'))
 while l:
- y,x,*l=l
- while~x+y:s=str(x);a+=x*(s==s[:len(s)//2]*2);b+=x*(s in(s*2)[1:-1]);x-=1
+ x,y,*l=l
+ while x<=y:A=len(s:=str(x))//(s*2).find(s,1);a+=x*(A%2<1);b+=1%A*x;x+=1
 print(a,b)
