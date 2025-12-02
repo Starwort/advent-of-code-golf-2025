@@ -1,0 +1,2 @@
+#import<ios>
+int a,b,c,d,e=50,f=e,g,h,i=f*2;int main(){while(~scanf(" %c%d",&c,&d)){g=f;c>81?e+=d,f+=d:(e-=d,f-=d);a+=!(e%=i?:e+=i);d<(h=c>81?i-g%i:g%i?:h=i)?:b+=(d-h)/i+1;(f%=i)>0?:f+=i;}printf("%d\n%d",a,b);}
