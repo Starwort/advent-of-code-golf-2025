@@ -1,0 +1,3 @@
+t ','=' ';t c=c
+h f i=print$sum[v|w<-words$t<$>i,(x,_:y)<-lex w,v<-[read x..read y],any((\s k->s==([1..k]>>take(div(length s)k)s))$show v)f]
+main=h[2]<>h[2..9]=<<getContents
