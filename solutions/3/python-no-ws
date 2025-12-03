@@ -1,1 +1,1 @@
-a=b=0;exec('v=lambda%cn,l=input():n*max(l)or(c:=max(l[:n-1]))+v(n+1,l[l.find(c)+1:]);a+=int(v(0));b+=int(v(-10));'%9*200);print(a,b)
+a=b=0;exec('v=lambda\tn,l=input():n*max(l)or(c:=max(l[:n-1]))+v(n+1,l[l.find(c)+1:]);a+=int(v(0));b+=int(v(-10));'*200);print(a,b)
