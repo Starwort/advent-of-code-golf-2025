@@ -1,0 +1,1 @@
+a=b=0;exec(f'v=lambda%cn,l=input():n+0and(c:=max(l[:-n]))+v(n-1,l[l.find(c)+1:])or""+max(l);a+=int(v(1));b+=int(v(11));'%32*200);print(a,b)
