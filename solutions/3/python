@@ -1,3 +1,2 @@
-a=b=0
-exec('v=lambda n,l=input()[::-1]:n+1and int(c:=max(l[n:]))*10**n+v(n-1,l[:l.rfind(c)]);a+=v(1);b+=v(11);'*200)
-print(a,b)
+*I,=open(0)
+for d in 2,12:print(sum(map(int,map(v:=lambda L,n=d,i=0:L*n and(c:=max(L[i:101-n]))+v(L,n-1,L.find(c,i)+1),I))))
