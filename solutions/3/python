@@ -1,2 +1,4 @@
-*I,=open(0)
-for d in 2,12:print(sum(map(int,map(v:=lambda L,n=d,i=0:L*n and(c:=max(L[i:101-n]))+v(L,n-1,L.find(c,i)+1),I))))
+a=b=0
+v=lambda n,i=0:n+1and int(c:=max(L[i:100-n]))*10**n+v(n-1,L.find(c,i)+1)
+for L in open(0):a+=v(1);b+=v(11)
+print(a,b)
