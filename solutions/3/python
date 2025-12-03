@@ -1,3 +1,3 @@
-x=y=0
-for i in open(0):v=lambda z,j=i.strip():z and(n:=max(j[:z]))+v(z+1,j[j.find(n)+1:])or max(j);x+=int(v(-1));y+=int(v(-11))
-print(x,y)
+a=b=0
+for l in open(0):v=lambda n,l=l.strip():n and(c:=max(l[:-n]))+v(n-1,l[l.find(c)+1:])or max(l);a+=int(v(1));b+=int(v(11))
+print(a,b)
