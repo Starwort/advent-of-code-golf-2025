@@ -1,4 +1,4 @@
 a=b=0
-v=lambda l,n:(c:=max(l[:-n]))+v(l[l.index(c)+1:],n-1)if n else max(l)
+v=lambda l,n:(c:=max(l[:-n]))+v(l[l.find(c)+1:],n-1)if n else max(l)
 for l in open(0):a+=int(v(m:=l.strip(),1));b+=int(v(m,11))
 print(a,b)
