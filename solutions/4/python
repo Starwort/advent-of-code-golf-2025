@@ -1,12 +1,10 @@
 v="".join(open(0))
 q=v.find("\n")
-def g(z):
-    c=0;x=v+" "*670
-    for _ in"@"*z:
-        d=[]
-        for i in range(19881):
-            if x[i]=="@"and sum([x[i+p+p//3*(q-2)-q-2]=="@"for p in range(9)])<5:c+=1;d+=i,
-        for i in d:x=x[:i]+"."+x[i+1:]
-    print(c)
-g(1)
-g(69)
+c=0;x=v+" "*670
+for z in range(69):
+    d=[]
+    for i in range(19881):
+        if x[i]=="@"and sum([x[i+p+p//3*(q-2)-q-2]=="@"for p in range(9)])<5:c+=1;d+=i,
+    for i in d:x=x[:i]+"."+x[i+1:]
+    z or print(c)
+print(c)
