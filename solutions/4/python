@@ -1,9 +1,6 @@
-x="".join(open(0))+" "*670;r=range
-q=x.find("\n")
-*d,c=0,
-for z in r(71):
- for i in r(~q*~q):
-  if x[i]>"."and sum([x[i+p+p//3*(q-2)-q-2]>"."for p in r(9)])<5:c+=1;d+=i,
- for i in d:x=x[:i]+"."+x[i+1:]
- z or print(c)
-print(c)
+x=open(0).read()
+l,*c=x.find('\n'),
+b='?'*l*2
+x+=b
+while x!=(x:="".join([x[i],"!"][sum(x[i+q]=='@'for q in[-l-2,~l,-l,-1,1,l,l+1,l+2])<4!=x[i]>"?"]for i in range(l*-~l))+b):c+=x.count("!"),
+print(c[0],c[-1])
