@@ -1,6 +1,6 @@
-v="".join(open(0))
-q=v.find("\n")
-c=0;x=v+" "*670
+x="".join(open(0))+" "*670
+q=x.find("\n")
+c=0
 for z in range(69):
  d=[]
  for i in range(19881):
