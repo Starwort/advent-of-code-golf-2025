@@ -1,8 +1,7 @@
 x="".join(open(0))+" "*670;r=range
 q=x.find("\n")
-c=0
+*d,c=0,
 for z in r(71):
- d=[]
  for i in r(~q*~q):
   if x[i]>"."and sum([x[i+p+p//3*(q-2)-q-2]>"."for p in r(9)])<5:c+=1;d+=i,
  for i in d:x=x[:i]+"."+x[i+1:]
