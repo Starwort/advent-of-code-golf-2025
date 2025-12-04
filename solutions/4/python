@@ -2,5 +2,5 @@ x=open(0).read()
 l,*c=x.find('\n'),
 b='?'*l*2
 x+=b
-while x!=(x:="".join([x[i],"!"][sum(x[i+q]=='@'for q in[-l-2,~l,-l,-1,1,l,l+1,l+2])<4!=x[i]>"?"]for i in range(l*-~l))+b):c+=x.count("!"),
+while x!=(x:=[[x[i],"!"][sum(x[i+q]=='@'for q in[-l-2,~l,-l,-1,1,l,l+1,l+2])<4!=x[i]>"?"]for i in range(l*-~l)]+[*b]):c+=x.count("!"),
 print(c[0],c[-1])
