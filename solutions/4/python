@@ -2,5 +2,5 @@ x=open(0).read()
 l,r,*c=x.find('\n'),range
 b='?'*l*2
 x+=b
-while x!=(x:=[[x[i],"!"][sum(x[i+p+p//3*(l-2)-l-2]>"?"for p in r(9))<5!=x[i]>"?"]for i in r(l*-~l)]+[*b]):c+=x.count("!"),
+while x!=(x:=[[x[i],""][sum(x[i+p+p//3*(l-2)-l-2]>"?"for p in r(9))<5!=x[i]>b]for i in r(l*-~l)]+[*b]):c+=x.count(""),
 print(c[0],c[-1])
