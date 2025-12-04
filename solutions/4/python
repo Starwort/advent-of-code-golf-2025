@@ -1,5 +1,5 @@
 x=open(0).read()
-l,r=x.find('\n'),range
-b='?'*l*2
+l=x.find('\n')
+b='??'*l
 x+=b
-print(*eval('(x:=[x[i][sum(b<x[i+p+p//3*(l-2)-l-2]for p in r(9))<5!=x[i]>b:]for i in r(l*-~l)]+[*b]).count(""),'*l)[::~-l])
+print(*eval('(x:=[x[i][sum(b<x[i+p+p//3*(l-2)-l-2]for p in range(9))<5!=x[i]>b:]for i in range(l*-~l)]+[*b]).count(""),'*l)[::~-l])
