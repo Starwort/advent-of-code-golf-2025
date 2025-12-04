@@ -1,3 +1,3 @@
 from numpy import*
 y=x=r_[[*zip(*open(0))]]>'.'
-print(*eval(f'sum(x-(a:=pad(0+y,1),{"a:=(a[2:]+a[1:-1]+a[:-2]).T,"*2}y:=a//5*y)[3]),'*99)[::98])
+print(*eval(f'sum(x-(y:={'c_[*[convolve(r,[1]*3)[1:-1]for r in '*2}0+y]]]]//5*y)),'*99)[::98])
