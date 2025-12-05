@@ -1,4 +1,5 @@
 e,*l=0,
-for r in open(t:=0):
- if' '<r:l+=[v:=eval(r.replace(*'-,'))]*(v*0!=0);t+=any(a<=eval(r)<=b for a,b in l)
+for r in open(0):
+ if'-'in r:l+=eval(r.replace(*'-,')),;t=0
+ if' '<r:t+=any(a<=eval(r)<=b for a,b in l)
 print(t,sum(-max(a-1,e)+(e:=b)for a,b in sorted(l)if b>e))
