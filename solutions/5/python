@@ -1,3 +1,5 @@
-*l,f=open(e:=0),
-while'-'in(s:=next(f)):l+=eval(s.replace(*'-,')),
-print(sum(any(a<=int(x)<=b for a,b in l)for x in f),sum(-max(a-1,e)+(e:=b)for a,b in sorted(l)if b>e))
+e,*l=0,
+for r in open(t:=0):
+ if'-'in r:l+=eval(r.replace(*'-,')),
+ t+=any(r>' '!=a<=eval(r)<=b for a,b in l)
+print(t,sum(-max(a-1,e)+(e:=b)for a,b in sorted(l)if b>e))
