@@ -1,5 +1,2 @@
-e,*l=0,
-for r in open(t:=0):
- if'-'in r:l+=eval(r.replace(*'-,')),
- t+=any(r>' '!=a<=eval(r)<=b for a,b in l)
-print(t,sum(-max(a-1,e)+(e:=b)for a,b in sorted(l)if b>e))
+F,*l=open(e:=0),
+for r in F:' '>r<print(sum(any(a<=eval(r)<=b for a,b in l)for r in F),sum(-max(a-1,e)+(e:=b)for a,b in sorted(l)if b>e));l+=eval(r.replace(*'-,')),
