@@ -1,0 +1,5 @@
+R,I=[],open(0)
+while'-'in(l:=next(I)):R+=[list(map(int,l.split('-')))]
+R.sort();e=u=0
+for a,b in R:u+=max(0,b-max(a,e)+1);e=max(e,b+1)
+print(sum(any(a<=int(x)<=b for a,b in R)for x in I),u)
