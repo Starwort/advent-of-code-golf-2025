@@ -1,5 +1,4 @@
-R,I=[],open(0)
-while'-'in(l:=next(I)):R+=[list(map(int,l.split('-')))]
-R.sort();e=u=0
-for a,b in R:u+=max(0,b-max(a,e)+1);e=max(e,b+1)
-print(sum(any(a<=int(x)<=b for a,b in R)for x in I),u)
+e,*l=0,
+for r in open(t:=0):
+ if' '<r:l+=[v:=eval(r.replace(*'-,'))]*(v*0!=0);t+=any(a<=eval(r)<=b for a,b in l)
+print(t,sum(-max(a-1,e)+(e:=b)for a,b in sorted(l)if b>e))
