@@ -1,0 +1,5 @@
+import util.
+main=>
+    Nums = chunks_of(map(to_int,split(read_line(),"-,")),2),
+    foreach(Q in[2,7])
+    [Y: [A,B] in Nums, D in [10**E: E in 1..5], P in 2..Q, A < D**P, A*10**P >= D**P, X in D//10..D-1, Y = X * (D**P-1)//(D-1), A<=Y, Y<=B].remove_dups.sum.println end.

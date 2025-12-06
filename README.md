@@ -30,7 +30,7 @@ If you wish to submit solutions, please use [the bot](https://discord.com/api/oa
 Day | APL (Dyalog APL) | C++ (GCC) | Common Lisp (SBCL) | Haskell | Julia | K (ngn/k) | Picat | Python | Python (No Whitespace) | Ruby
 --: | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 1 | - | [188 - astdefu](./solutions/1/cplusplus_gcc) | [159 - kg583](./solutions/1/sbcl) | [136 - ovs00](./solutions/1/haskell) | - | [37 - ovs00](./solutions/1/k_ngn) | [154 - bubbler](./solutions/1/picat) | [90 - .___uho](./solutions/1/python) | - | -
-2 | - | [878 - trintler](./solutions/2/cplusplus_gcc) | [242 - kg583](./solutions/2/sbcl) | [173 - ovs00](./solutions/2/haskell) | - | [65 - ovs00](./solutions/2/k_ngn) | - | [135 - kg583](./solutions/2/python) | - | [94 - the.unnamed](./solutions/2/ruby)
+2 | - | [878 - trintler](./solutions/2/cplusplus_gcc) | [242 - kg583](./solutions/2/sbcl) | [173 - ovs00](./solutions/2/haskell) | - | [65 - ovs00](./solutions/2/k_ngn) | [272 - bubbler](./solutions/2/picat) | [135 - kg583](./solutions/2/python) | - | [94 - the.unnamed](./solutions/2/ruby)
 3 | - | [296 - dialfrost](./solutions/3/cplusplus_gcc) | - | [338 - trintler](./solutions/3/haskell) | [154 - thomas._._._.](./solutions/3/julia) | [36 - ovs00](./solutions/3/k_ngn) | - | [123 - .___uho](./solutions/3/python) | [130 - helloperson.](./solutions/3/python-no-ws) | -
 4 | [69 - ovs00](./solutions/4/dyalog_apl) | - | - | - | - | [43 - ovs00](./solutions/4/k_ngn) | - | [140 - ovs00](./solutions/4/python) | - | -
 5 | - | - | - | - | - | [54 - ovs00](./solutions/5/k_ngn) | - | [163 - biz314](./solutions/5/python) | - | -
