@@ -1,2 +1,2 @@
 *I,=open(0)
-exec('print(eval(q.join(%s.join(p)for*p,o in zip(*map(str%s,I)))));'*2%('"+"+o','.split','{*p}=={" "}and(q:="+")or(q:=o+q)[1:]+""',q:=""))
+exec('print(eval(q.join(%s.join(p)for*p,o in zip(*map(str%s,I)))));'*2%('"+"+o','.split','{*p}=={o}and(q:="+")or(q:=o+q)[1:]+""',q:=""))
