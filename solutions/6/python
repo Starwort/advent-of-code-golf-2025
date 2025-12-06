@@ -1,3 +1,3 @@
 *I,=open(0)
 q=""
-print(sum(eval(o.join(p))for*p,o in zip(*map(str.split,I))),eval(q.join({*p}-{" "}and(q,q:=q+o)[0]+"".join(p)or"+"+(q:="")for*p,o in zip(*I))))
+exec('print(eval(q.join(%s.join(p)for*p,o in zip(*map(%st,I)))));'*2%('"+"+o','str.spli','{*p}=={" "}and"+"+(q:="")or(q,q:=q+o)[0]+""','lis'))
