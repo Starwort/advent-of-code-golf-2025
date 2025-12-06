@@ -1,6 +1,6 @@
-x=[*open(0)]
+*x,n=*open(0),
 y=[[]]
-for i in zip(*x[:-1]):
+for i in zip(*x):
     if{*i}&{*'0123456789'}:y[-1]+="".join(i),
     else:y+=[],
-print(sum(eval(i[-1].join(i[:-1]))for i in zip(*[i.split()for i in x])),sum(eval(i.join(j))for i,j in zip(x[-1].split(),y)))
+print(sum(eval(i[-1].join(i[:-1]))for i in zip(*[i.split()for i in x+[n]])),sum(eval(i.join(j))for i,j in zip(n.split(),y)))
