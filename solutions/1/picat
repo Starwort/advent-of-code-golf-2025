@@ -1,1 +1,1 @@
-main=>L=read_file_lines(),A=50,B=50,X=0,Y=0,foreach([C|N]in L)D=cond(C='L',-1,1),M=to_int(N),A:=A+D*M,if(A mod 100=0)then X:=X+1 end,foreach(_ in 1..M)B:=B+D,if(B mod 100=0)then Y:=Y+1 end end end,println(X),print(Y).
+main=>B=50,X=0,Y=0,foreach([C|N]in read_file_lines())D=cond(C='L',-1,1),foreach(_ in 1..to_int(N))B:=B+D,Y:=Y+0**(B mod 100)end,X:=X+0**(B mod 100)end,println(X),print(Y).
