@@ -1,6 +1,3 @@
-*x,n=*open(0),
-y=[[]]
-for i in zip(*x):
-    if{*i}&{*'0123456789'}:y[-1]+="".join(i),
-    else:y+=[],
-print(sum(eval(i[-1].join(i[:-1]))for i in zip(*[i.split()for i in x+[n]])),sum(eval(i.join(j))for i,j in zip(n.split(),y)))
+*I,=open(0)
+q=""
+print(sum(eval(o.join(p))for*p,o in zip(*map(str.split,I))),eval("".join({*p}=={" "}and"+"+(q:="")or(q,q:=q or o)[0]+"".join(p)for*p,o in zip(*I))))
