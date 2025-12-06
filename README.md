@@ -34,4 +34,4 @@ Day | APL (Dyalog APL) | C++ (GCC) | Common Lisp (SBCL) | Haskell | Julia | K (n
 3 | - | [304 - trintler](./solutions/3/cplusplus_gcc) | - | - | [154 - thomas._._._.](./solutions/3/julia) | [36 - ovs00](./solutions/3/k_ngn) | [123 - .___uho](./solutions/3/python) | [130 - helloperson.](./solutions/3/python-no-ws) | -
 4 | [69 - ovs00](./solutions/4/dyalog_apl) | - | - | - | - | [43 - ovs00](./solutions/4/k_ngn) | [140 - ovs00](./solutions/4/python) | - | -
 5 | - | - | - | - | - | [54 - ovs00](./solutions/5/k_ngn) | [163 - biz314](./solutions/5/python) | - | -
-6 | - | - | - | - | - | - | [153 - helloperson.](./solutions/6/python) | - | -
+6 | - | - | - | - | - | - | [152 - mukundan314](./solutions/6/python) | - | -
