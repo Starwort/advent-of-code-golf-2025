@@ -1,0 +1,11 @@
+x=[*open(0)]
+c=d=0
+for i in zip(*[i.split()for i in x]):c+=eval(i[-1].join(i[:-1]))
+print(c)
+
+y=[[]]
+for i in zip(*x[:-1]):
+    if not({*i}&{*'0123456789'}):y+=[],
+    else:y[-1]+="".join(i).strip(),
+for i,j in zip(x[-1].split(),y):d+=eval(i.join(j))
+print(d)
