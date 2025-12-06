@@ -1,2 +1,2 @@
 #include<bits/stdc++.h>
-using namespace std;int main(){long a=0,b=0;string s,t;for(;cin>>s;b+=stoll(t)){auto i=max_element(s.begin(),s.end()-1);a+=*i*10+*max_element(i+1,s.end())-528;int k=s.size()-12;t="";for(char c:s){while(k&&t.size()&&t.back()<c)k--,t.pop_back();t+=c;}t.resize(12);}cout<<a<<' '<<b;}
+using namespace std;long a,b;string s,t;int main(){for(;cin>>s;b+=stoll(t)){auto i=max_element(s.begin(),s.end()-1);a+=*i*10+*max_element(i+1,s.end())-528;int k=s.size()-12;t="";for(char c:s){for(;k&&t.size()&&t.back()<c;k--)t.pop_back();t+=c;}t.resize(12);}cout<<a<<' '<<b;}
