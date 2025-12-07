@@ -1,5 +1,6 @@
-c=0;f,*x=open(0);l=range(len(f)-1);y=[f[i]>"R"for i in l]
-for i in x:
-    for j in l:
-        if"P"<i[j]:w=y[j];y[j+1]+=w;y[j-1]+=w;y[j]=0;c+=w>0
-print(c,sum(y))
+y=[]
+for x in open(a:=0):
+ for i,c in enumerate(x):
+  if"S"in x:y+=c>".",
+  elif"R"<c:w=y[i];y[i+1]+=w;y[i-1]+=w;y[i]=0;a+=w>0
+print(a,sum(y))
