@@ -33,6 +33,6 @@ Day | APL (Dyalog APL) | C++ (GCC) | Common Lisp (SBCL) | Haskell | Julia | K (n
 2 | - | [878 - trintler](./solutions/2/cplusplus_gcc) | [242 - kg583](./solutions/2/sbcl) | [173 - ovs00](./solutions/2/haskell) | - | [65 - ovs00](./solutions/2/k_ngn) | [84 - friedchickenblob](./solutions/2/perl) | [221 - bubbler](./solutions/2/picat) | [135 - kg583](./solutions/2/python) | - | [94 - the.unnamed](./solutions/2/ruby)
 3 | - | [296 - dialfrost](./solutions/3/cplusplus_gcc) | - | [338 - trintler](./solutions/3/haskell) | [154 - thomas._._._.](./solutions/3/julia) | [36 - ovs00](./solutions/3/k_ngn) | - | [186 - bubbler](./solutions/3/picat) | [123 - .___uho](./solutions/3/python) | [130 - helloperson.](./solutions/3/python-no-ws) | -
 4 | [69 - ovs00](./solutions/4/dyalog_apl) | - | - | - | - | [43 - ovs00](./solutions/4/k_ngn) | - | - | [140 - ovs00](./solutions/4/python) | - | -
-5 | - | - | - | - | - | [54 - ovs00](./solutions/5/k_ngn) | - | - | [163 - biz314](./solutions/5/python) | - | -
+5 | - | - | - | - | - | [54 - ovs00](./solutions/5/k_ngn) | - | - | [161 - _tessaract](./solutions/5/python) | - | -
 6 | - | - | - | - | - | [43 - ovs00](./solutions/6/k_ngn) | - | - | [142 - helloperson.](./solutions/6/python) | - | -
 7 | - | - | - | - | - | [41 - twobular](./solutions/7/k_ngn) | - | - | [115 - mukundan314](./solutions/7/python) | [141 - hyacinthus_orientalis_1753](./solutions/7/python-no-ws) | [117 - natt.e](./solutions/7/ruby)
