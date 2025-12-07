@@ -1,6 +1,5 @@
 a=y=0
-T=9**25
 for x in open(0):
- i=1
- for c in x:i*=T;n=y//i%T*("T"<c);y+=i*(c=="S")+i*n*~-T+i//T*n;a+=n>0
+ i=T=9**25
+ for c in x:n=y//i%T*("T"<c);y+=i*(c=="S")+i*n*~-T+i//T*n;a+=n>0;i*=T
 print(a,y%~-T)
