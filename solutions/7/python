@@ -1,0 +1,5 @@
+c=0;f,*x=open(0);l=range(len(f)-1);y=[f[i]>"R"for i in l]
+for i in x:
+    for j in l:
+        if"P"<i[j]:w=y[j];y[j+1]+=w;y[j-1]+=w;y[j]=0;c+=w>0
+print(c,sum(y))
