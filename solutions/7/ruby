@@ -1,0 +1,6 @@
+s=0
+h={gets=~/S/=>1}
+$<.map{|r|n=Hash.new 0
+h.map{|x,t|r[x]>?.?(n[x-1]+=t;n[x+1]+=t;s+=1):n[x]+=t}
+h=n}
+p s,h.sum{_2}
