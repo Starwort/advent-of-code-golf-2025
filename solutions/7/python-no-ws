@@ -1,1 +1,1 @@
-exec('y=[0]*200\nfor(x)in\topen(a:=0):\n\ti=0\n\tfor(c)in\tx:n=("T"<c)*y[i];y[i+1]+=n;y[i-1]+=n;y[i]-=n-(c=="S");a+=n>0;i+=1\nprint(a,sum(y))')
+y=[0]*200;exec('for(x)in\topen(a:=0):\n\ti=0\n\tfor(c)in\tx:n=("T"<c)*y[i];y[i+1]+=n;y[i-1]+=n;y[i]-=n-(c=="S");a+=n>0;i+=1');print(a,sum(y))
