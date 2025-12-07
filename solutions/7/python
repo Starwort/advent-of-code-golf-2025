@@ -2,5 +2,5 @@ y=[]
 for x in open(a:=0):
  for i,c in enumerate(x):
   if"S"in x:y+=c>".",
-  if"^"==c:w=y[i];y[i+1]+=w;y[i-1]+=w;y[i]=0;a+=w>0
+  if"T"<c:w=y[i];y[i+1]+=w;y[i-1]+=w;y[i]=0;a+=w>0
 print(a,sum(y))
