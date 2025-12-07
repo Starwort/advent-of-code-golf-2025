@@ -1,5 +1,5 @@
-y=[0]*200
+y=[0]*144
 for x in open(a:=0):
  i=0
- for c in x:w=y[i]*("T"<c);y[i+1]+=w;y[i-1]+=w;y[i]*=w<1;a+=w>0;y[i]+=c=="S";i+=1
+ for c in x:n=("T"<c)*y[i];y[i+1]+=n;y[i-1]+=n;y[i]-=n;a+=n>0;y[i]+=c=="S";i+=1
 print(a,sum(y))
