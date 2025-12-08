@@ -1,16 +1,14 @@
-c=[(*map(int,i.split(",")),)for i in open(0)]
+import math
+c=[eval(i)for i in open(0)]
 x=len(c)
 d=[[i]for i in range(x)]
-q=sorted([[i,j] for i in range(x)for j in range(i)],key=lambda i:sum((q-r)**2 for q,r in zip(c[i[0]],c[i[1]])))
-
+q=sorted([[i,j]for i in range(x)for j in range(i)],key=lambda i:math.dist(c[i[0]],c[i[1]]))
 i=0
-while {*d[0]}!={*range(x)}:
-    m,n=q[i]
-    k=[*{*d[m],*d[n]}]
-    for j in k:d[j]=k
-    if i==1000:
-        g=1
-        for j in sorted({(*[k for k in range(x) if i in d[k]],)for i in range(x)},key=len)[-3:]:g*=len(j)
-        print(g)
-    i+=1
+while{*d[0]}!={*range(x)}:
+ m,n=q[i];k=[*{*d[m],*d[n]}];i+=1
+ for j in k:d[j]=k
+ if i==1001:
+  g=1
+  for j in sorted({(*[k for k in range(x)if i in d[k]],)for i in range(x)},key=len)[-3:]:g*=len(j)
+  print(g)
 print(int(c[m][0])*int(c[n][0]))
