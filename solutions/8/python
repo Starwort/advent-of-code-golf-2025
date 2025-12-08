@@ -1,7 +1,8 @@
 import math
+S=sorted
 *x,=map(eval,open(t:=0))
 D={b:{b}for b in x}
-for b,c in sorted([(b,c)for b in x for c in x],key=lambda l:math.dist(*l)):
+for b,c in S([(b,c)for b in x for c in x],key=lambda l:math.dist(*l)):
  for k in(s:=D[b]|D[c]):D[k]=s
  {*x}==s<print(e*f*g,b[0]*c[0]);t+=1
- if t==3e3:*_,e,f,g=sorted(map(len,{(*D[b],)for b in D}))
+ if t==3e3:*_,e,f,g=S(map(len,{(*D[b],)for b in D}))
