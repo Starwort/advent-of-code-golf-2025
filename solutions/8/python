@@ -1,14 +1,7 @@
-import math
-c=[eval(i)for i in open(0)]
-x=len(c)
-d=[[i]for i in range(x)]
-q=sorted([[i,j]for i in range(x)for j in range(i)],key=lambda i:math.dist(c[i[0]],c[i[1]]))
-i=0
-while{*d[0]}!={*range(x)}:
- m,n=q[i];k=[*{*d[m],*d[n]}];i+=1
- for j in k:d[j]=k
- if i==1001:
-  g=1
-  for j in sorted({(*[k for k in range(x)if i in d[k]],)for i in range(x)},key=len)[-3:]:g*=len(j)
-  print(g)
-print(int(c[m][0])*int(c[n][0]))
+from math import*
+*x,=map(eval,open(t:=0))
+D={b:{b}for b in x}
+for b,c in sorted([(b,c)for b in x for c in x if b<c],key=lambda l:dist(*l)):
+ for k in(s:=D[b]|D[c]):D[k]=s
+ {*x}==s<print(e*f*g,b[0]*c[0]);t+=1
+ if t==1e3:*_,e,f,g=sorted(map(len,{(*D[b],)for b in D}))
