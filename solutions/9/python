@@ -3,4 +3,7 @@ s=[((min(i,k),max(i,k),min(j,m),max(j,m)))for(i,j),(k,m)in zip(p,p[1:]+p[:1])]
 def g(i,q,j,r):
     i,j = min(i,j)+1,max(i,j)-1;q,r=min(q,r)+1,max(q,r)-1
     return all(min(b,j)<max(a,i)or min(d,r)<max(c,q)for a,b,c,d in s)
-print(max([~abs(q-r)*~abs(i-j)for i,q in p for j,r in p]),max([~abs(q-r)*~abs(i-j)for i,q in p for j,r in p if g(i,q,j,r)]))
+x=y=0
+for i,q in p:
+ for j,r in p:x=max(x,A:=~abs(q-r)*~abs(i-j));y=max(y,g(i,q,j,r)*A)
+print(x,y)
