@@ -1,7 +1,6 @@
 p=*map(eval,open(0)),
-S=sorted
 M=max
-s=[sum(map(S,zip(*x)),[])for x in zip(p,p[1:]+p)]
+s=[sum(map(S:=sorted,zip(*x)),[])for x in zip(p,p[1:]+p)]
 x=y=0
 for i,q in p:
  for j,r in p:I,J=S([i,j]);Q,R=S([q,r]);x=M(x,A:=~(R-Q)*~(J-I));y=M(y,all(min(b,J-1)<M(a,I+1)or min(d,R-1)<M(c,Q+1)for a,b,c,d in s)*A)
