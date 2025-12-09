@@ -2,5 +2,5 @@ p=*map(eval,open(0)),
 M=max;m=min
 x=y=1
 for I,q in p:
- for J,r in p:x=M(x,A:=~abs(r-q)*~(J-I));y=(y,A)[A>y>0<m(m(M(a),~-J)<M(m(a),I+1)or m(M(c),~-M(q,r))<M(m(c),m(q,r)+1)for a,c in map(zip,p,p[1:]+p))]
+ for J,r in p:x=M(x,A:=~abs(r-q)*~(J-I));y<A>0<m(m(M(a),~-J)<M(m(a),I+1)or m(M(c),~-M(q,r))<M(m(c),m(q,r)+1)for a,c in map(zip,p,p[1:]+p))<(y:=A)
 print(x,y)
