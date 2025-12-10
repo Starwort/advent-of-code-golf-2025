@@ -1,4 +1,4 @@
 import scipy
 from numpy import*
-for z in open(c:=0,"rb"):t,*b,j=z.split();v=[1]*len(b);k=len(t)-2;c+=r_[[int(.5+scipy.optimize.milp(v+[0]*B,integrality=v+[1]*B,constraints=(c_[*[isin(r_[:k]+48,a)for*a,in b],-2*eye(k,B)],D,D)).fun)for B,D in[[k,r_[*t[1:-1]]%2],[0,eval(j[1:-1])]]]]
+for z in open(c:=0,"rb"):[_,*t,_],*b,j=z.split();v=[1]*len(b);k=len(t);c+=r_[[int(.5+scipy.optimize.milp(v+[0]*B,integrality=v+[1]*B,constraints=(c_[*[isin(r_[:k]+48,a)for*a,in b],-2*eye(k,B)],D,D)).fun)for B,D in[[k,r_[t]%2],[0,eval(j[1:-1])]]]]
 print(*c)
