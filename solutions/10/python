@@ -1,0 +1,4 @@
+import scipy,numpy as N
+l=c=0
+for z in open(0,'rb'):t,*b,j=z.split();n=len(b);R=range(k:=len(j:=[*eval(j[1:-1])]));L=lambda V,I,*C:round(sum(scipy.optimize.milp(V,integrality=I,constraints=C).x[:n]));c+=L(v:=[1]*n,v,x:=[[i+48in a for a in b]for i in R],j,j);l+=L(v+[0]*k,v+[1]*k,N.c_[x,N.diagflat([-2]*k)],s:=[u%2for u in t[1:-1]],s)
+print(l,c)
