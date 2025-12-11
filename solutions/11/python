@@ -1,4 +1,4 @@
 from functools import*
 *G,=open(0)
-f=cache(lambda x,y:sum([f(v,y+(x in"dacfft"))for r in G for v in r.split()[1:]if x==r[:3]]or[y>1]))
+f=cache(lambda x,y:sum(f(v,y+(x in"dac.fft"))for r in G for v in r.split()[1:]if x==r[:3])or y>1)
 print(f("you",2),f("svr",0))
