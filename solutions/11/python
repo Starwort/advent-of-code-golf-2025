@@ -1,4 +1,4 @@
 from functools import*
-G={s[:3]:s[4:].split()for s in open(0)}
-f=cache(lambda x,y:y>1if"out"==x else sum(map(f,G[x],[y+(x in"fftdac")]*99)))
+*G,=open(0)
+f=cache(lambda x,y:sum([f(v,y+(x in"fft,dac"))for r in G for v in r.split()[1:]if x==r[:3]]or[y>1]))
 print(f("you",2),f("svr",0))
