@@ -1,4 +1,4 @@
 from functools import*
 *G,=open(0)
-f=cache(lambda x,y:sum(f(v,y+(x in"dac.fft"))for r in G for v in(x==r[:3])*r.split()[1:])or y>1)
-print(f("you",2),f("svr",0))
+f=cache(lambda x,y,z="out":x==z[:y]or sum(f(x,y+(z in"dac.fft"),r[:3])for r in G if' '+z in r))
+print(f("you",3),f("svr",1))
