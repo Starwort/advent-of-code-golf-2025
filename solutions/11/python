@@ -1,0 +1,4 @@
+from functools import*
+G={s[:3]:s[4:].split()for s in open(0)}
+f=cache(lambda x,y:y>1if"out"==x else sum(f(n,y+(x in"fft,dac"))for n in G[x]))
+print(f("you",2),f("svr",0))
