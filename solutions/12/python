@@ -1,0 +1,4 @@
+t=0
+*G,=open(0)
+for r in G[30:]:d,s=r.split(': ');u,v=map(int,d.split('x'));a=map(int,s.split());t+=u*v>=sum(a)*9
+print(t)
