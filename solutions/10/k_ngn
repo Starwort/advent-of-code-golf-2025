@@ -1,0 +1,35 @@
+/ based on https://codeberg.org/fiuzeri/aoc2025/src/branch/master/10.k
+(L;B;J):+{(*2!;`I$","\';.*:)@'(0 1,-1+#x)_-1_'1_'x:" "\x}'0:0
+B:L{~^y?\:!#x}'B
+
++/{
+ (A;b):+(0,#x)_/:*(+x,,y;0){(A;k):x
+   A@:>A
+   :[~0^A[k;y];:x;]
+   j:(&A[;y])^k
+   A[j]:~A[j]=\:A[k]
+   (A;k+1)}/!#x
+ b:*'b
+ vs:?,/v:(1_&)'A
+ try:!(#vs)#2
+ r:&/+/try,2!b+/'try@vs?v
+ r}'[B;L]
+
+gen:{:[~#y; ,!0; ,/o\:[x-/:i*\:l;-1_y],''i:!1+&/x@&l:*|y]}
+gcd:*|(*:)(|!\)/,
+red:{(-gcd/x|-x)!x}'
++/{
+ (A;b):+(0,#x)_/:*(+x,,y;0){(A;k):x
+   A@:>~~A
+   $[~0^A[k;y];:x;]
+   j:(&~~A[;y])^k
+   / A[j]:red@(A[j]*A[k;y])-A[k]*/:A[j;y]
+   A[j]:red@(A[j]*A[k;y])-A[k]*/:A[j;y]
+   (A;k+1)}/!#x
+ b:*'b
+ vs:?,/v:(1_&:)'~~A
+ try:+gen[y;x@vs]
+ c:b-+/'(A@'v)*try@vs?v
+ d:A@'*'&'~~A
+ q:(d&-d)!'c*0 0'd
+ &/+/(try,q)@\:&(~|/(d|-d)!'c)&~|/q<0}'[B;J]
