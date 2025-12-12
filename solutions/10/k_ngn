@@ -23,7 +23,6 @@ red:{(-gcd/x|-x)!x}'
    A@:>~~A
    $[~0^A[k;y];:x;]
    j:(&~~A[;y])^k
-   / A[j]:red@(A[j]*A[k;y])-A[k]*/:A[j;y]
    A[j]:red@(A[j]*A[k;y])-A[k]*/:A[j;y]
    (A;k+1)}/!#x
  b:*'b
