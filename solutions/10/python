@@ -1,4 +1,3 @@
-import scipy
-from numpy import*
-for z in open(c:=0,"rb"):[_,*t,_],*b,j=z.split();v=[1]*len(b);k=len(t);c+=r_[[int(.5+scipy.optimize.milp(v+[0]*B,integrality=v+[1]*B,constraints=(c_[*[isin(r_[:k]+48,a)for*a,in b],-2*eye(k,B)],D,D)).fun)for B,D in[[k,r_[t]%2],[0,eval(j[1:-1])]]]]
-print(*c)
+a=b=0
+for s in open(0,"rb"):d,*B,j=s.split();f=lambda V,i=0:any(V)and(min(999*(min(U:=[x-(c in B[i])for c,x in enumerate(V,48)])<0)or f(U,i+1)+1,f(V,i+1))if i<len(B)else 999*any(x%2for x in V)or(q and 2*f([x>>1for x in V])));q=0;a+=f(d[1:-1]);q=1;b+=f(eval(j[1:-1]))
+print(a,b)
