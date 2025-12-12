@@ -1,4 +1,3 @@
 import re
-*G,=open(t:=0)
-for r in G[30:]:u,v,*s=map(int,re.findall("\d+",r));t+=u*v>=sum(s)*9
+for r in[*open(t:=0)][30:]:u,v,*s=map(int,re.findall("\d+",r));t+=u*v>=sum(s)*9
 print(t)
