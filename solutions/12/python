@@ -1,3 +1,1 @@
-import re
-for r in[*open(t:=0)][30:]:u,v,*s=eval(re.sub("\D+",",",r));t+=u*v>=sum(s)*9
-print(t)
+print(sum(eval(r.translate({120:42,32:43,58:"/9>="}))for r in[*open(0)][30:]))
