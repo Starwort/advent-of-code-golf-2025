@@ -1,4 +1,4 @@
 a=b=0
-f=lambda V,i=0,j=47:(-1in V)*999or B[i:]and min(1+f([x-((j:=j+1)in B[i])for x in V],i+1),f(V,i+1))or 999*any(x&1for x in V)or q*any(V)and 2*f([x>>1for x in V])
+f=lambda V,i=0,j=47:(-1in V)<<9or B[i:]and min(1+f([x-((j:=j+1)in B[i])for x in V],i+1),f(V,i+1))or any(x&1for x in V)<<9or q*any(V)and 2*f([x>>1for x in V])
 for s in open(0,"rb"):(_,*d,_),*B,j=s.split();q=0;a+=f(d);q=1;b+=f(eval(j[1:-1]))
 print(a,b)
