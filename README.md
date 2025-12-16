@@ -38,6 +38,6 @@ Day | APL (Dyalog APL) | C++ (GCC) | Common Lisp (SBCL) | Haskell | Julia | K (n
 7 | - | - | - | - | - | [41 - twobular](./solutions/7/k_ngn) | - | - | [115 - mukundan314](./solutions/7/python) | [141 - hyacinthus_orientalis_1753](./solutions/7/python-no-ws) | [117 - natt.e](./solutions/7/ruby)
 8 | - | - | - | - | - | [85 - twobular](./solutions/8/k_ngn) | - | - | [227 - n00o0oo0b](./solutions/8/python) | - | -
 9 | - | - | - | - | - | [69 - ovs00](./solutions/9/k_ngn) | - | - | [203 - ovs00](./solutions/9/python) | - | -
-10 | - | - | - | - | - | [128 - twobular](./solutions/10/k_ngn) | - | - | [256 - mukundan314](./solutions/10/python) | - | -
+10 | - | - | - | - | - | [126 - twobular](./solutions/10/k_ngn) | - | - | [256 - mukundan314](./solutions/10/python) | - | -
 11 | - | - | - | - | - | [78 - ovs00](./solutions/11/k_ngn) | - | - | [159 - biz314](./solutions/11/python) | - | -
 12 | - | - | - | - | - | [30 - twobular](./solutions/12/k_ngn) | - | - | [77 - kg583](./solutions/12/python) | - | -
